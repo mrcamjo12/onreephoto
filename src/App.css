@@ -51,7 +51,7 @@ main {
 .bars {
     position: fixed;
     left: 0;
-    background-color: green;
+    background-color: purple;
     color: white;
     font-size: 30px;
     padding: 5px 10px;

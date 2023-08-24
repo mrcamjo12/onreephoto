@@ -1,16 +1,17 @@
 import React from 'react';
 import {
-  FaBehance,
-  FaFacebook,
-  FaLinkedin,
   FaTwitter,
-  FaSketch,
+  FaInstagram,
   FaHome,
-  FaUserFriends,
-  FaFolderOpen,
+  FaBookOpen,
+  FaHelicopter,
   FaCalendarAlt,
   FaWpforms,
+  FaWalking,
+  FaHandshake
 } from 'react-icons/fa';
+import {MdSportsSoccer} from 'react-icons/md'
+import {ImEarth} from 'react-icons/im'
 export const links = [
   {
     id: 1,
@@ -20,27 +21,39 @@ export const links = [
   },
   {
     id: 2,
-    url: '/team',
-    text: 'team',
-    icon: <FaUserFriends />,
+    url: '/about',
+    text: 'about',
+    icon: <FaBookOpen />,
   },
   {
     id: 3,
-    url: '/projects',
-    text: 'projects',
-    icon: <FaFolderOpen />,
+    url: '/flight',
+    text: 'flight',
+    icon: <FaHelicopter />,
   },
   {
     id: 4,
-    url: '/calendar',
-    text: 'calendar',
-    icon: <FaCalendarAlt />,
+    url: '/sports',
+    text: 'sports',
+    icon: <MdSportsSoccer />,
   },
   {
     id: 5,
-    url: '/documents',
-    text: 'documents',
-    icon: <FaWpforms />,
+    url: '/world',
+    text: 'world',
+    icon: <ImEarth />,
+  },
+  {
+    id: 5,
+    url: '/people',
+    text: 'people',
+    icon: <FaWalking />,
+  },
+  {
+    id: 5,
+    url: '/clients',
+    text: 'clients',
+    icon: <FaHandshake />,
   },
 ];
 
@@ -48,26 +61,11 @@ export const social = [
   {
     id: 1,
     url: 'https://www.twitter.com',
-    icon: <FaFacebook />,
-  },
-  {
-    id: 2,
-    url: 'https://www.twitter.com',
     icon: <FaTwitter />,
   },
   {
-    id: 3,
-    url: 'https://www.twitter.com',
-    icon: <FaLinkedin />,
-  },
-  {
-    id: 4,
-    url: 'https://www.twitter.com',
-    icon: <FaBehance />,
-  },
-  {
-    id: 5,
-    url: 'https://www.twitter.com',
-    icon: <FaSketch />,
-  },
+    id: 2,
+    url: 'https://www.instagram.com/onreephotography/',
+    icon: <FaInstagram />,
+  }  
 ];

@@ -1,17 +1,15 @@
-import React, { useContext } from 'react'
 import { FaBars } from 'react-icons/fa'
-import { AppContext, useGlobalContext } from './context'
+import { useGlobalContext } from './context'
+import PhotoSlide from './Carousel'
 
 const Home = () => {
-  const {openSidebar, openModal} = useGlobalContext()
+  const {openSidebar} = useGlobalContext()
   return (
     <main>
-      <h1>onree photography</h1>
       <button className='sidebar-toggle' onClick={openSidebar}>
         <FaBars />
       </button>
-      <button className='btn' onClick={openModal}>
-        show modal</button>
+      
     </main>
   )
 }

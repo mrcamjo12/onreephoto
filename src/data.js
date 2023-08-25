@@ -5,13 +5,13 @@ import {
   FaHome,
   FaBookOpen,
   FaHelicopter,
-  FaCalendarAlt,
-  FaWpforms,
   FaWalking,
   FaHandshake
 } from 'react-icons/fa';
 import {MdSportsSoccer} from 'react-icons/md'
 import {ImEarth} from 'react-icons/im'
+
+// sidebar links and icons
 export const links = [
   {
     id: 1,
@@ -57,6 +57,7 @@ export const links = [
   },
 ];
 
+// social media links and icons
 export const social = [
   {
     id: 1,
@@ -69,3 +70,6 @@ export const social = [
     icon: <FaInstagram />,
   }  
 ];
+
+// pictures for carousel by category
+

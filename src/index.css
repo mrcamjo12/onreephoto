@@ -326,3 +326,18 @@ Sidebar
     width: 100%;
   }
 }
+
+/* Home Page Images */
+
+.home-img {
+  display: grid;
+  justify-content: center;
+  padding-top: 15%;
+  align-items: center;
+}
+
+.header-logo {
+  min-width: 500px;
+  position: fixed;
+  justify-content: center;
+}

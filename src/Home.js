@@ -8,14 +8,14 @@ const Home = () => {
   return (
     <main>
 
-      <button className='sidebar-toggle' onClick={openSidebar}>
+      {/* <button className='sidebar-toggle' onClick={openSidebar}>
         <FaBars />
-      </button>
+      </button> */}
       
          <div className='container'>
-          <a href='/' className='main-logo'>
+          {/* <a href='/' className='main-logo'>
             <img src={logo} alt='onree photography'></img>
-          </a>
+          </a> */}
           <HomeImages className='home-contents'/>
         </div>
 

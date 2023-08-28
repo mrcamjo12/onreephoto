@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import Home from './Home'
+import TopBar from './TopBar'
 import logo from './logo.svg'
 
 
@@ -8,6 +9,7 @@ import logo from './logo.svg'
 function App() {
   return (
     <>
+      {/* <TopBar /> */}
       <Home />
       <Sidebar />
       

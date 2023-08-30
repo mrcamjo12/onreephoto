@@ -10,6 +10,8 @@ import {
 } from 'react-icons/fa';
 import {MdSportsSoccer} from 'react-icons/md'
 import {ImEarth} from 'react-icons/im'
+import {Link} from 'react-router-dom'
+import Flight from './Pages/Flight/Flight'
 
 // sidebar links and icons
 export const links = [
@@ -27,7 +29,7 @@ export const links = [
   },
   {
     id: 3,
-    url: '/flight',
+    url: <Link to='/flight'>Flight</Link>,
     text: 'flight',
     icon: <FaHelicopter />,
   },

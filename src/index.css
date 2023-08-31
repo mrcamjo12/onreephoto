@@ -62,7 +62,7 @@ Global Styles
 body {
   font-family: futura, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: #DCF1A1;
+  background: #BDB0C5;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -83,6 +83,7 @@ h4 {
   /* text-transform: capitalize; */
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 h1 {
@@ -156,14 +157,20 @@ main {
 .sidebar-toggle {
   position: fixed;
   top: 2rem;
-  left: 3rem;
+  left: 2rem;
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
   color: var(--clr-primary-5);
   transition: var(--transition);
   cursor: pointer;
+  
 }
+
+.hide-sidebar-toggle{
+  transform: translate(-100%)
+}
+
 
 /* @keyframes bounce {
   0% {
@@ -205,7 +212,7 @@ main {
 Modal
 ===============
 */
-.modal-overlay {
+/* .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -217,15 +224,15 @@ Modal
   transition: var(--transition);
   visibility: hidden;
   z-index: -1;
-}
+} */
 
 /* OPEN/CLOSE MODAL */
-.show-modal {
+/* .show-modal {
   visibility: visible;
   z-index: 10;
-}
+} */
 
-.modal-container {
+/* .modal-container {
   background: var(--clr-white);
   border-radius: var(--radius);
   width: 90vw;
@@ -235,10 +242,10 @@ Modal
   display: grid;
   place-items: center;
   position: relative;
-}
+} */
 
-.close-modal-btn {
-  position: absolute;
+/* .close-modal-btn {
+  position: fixed;
   top: 1rem;
   right: 1rem;
   font-size: 2rem;
@@ -246,29 +253,29 @@ Modal
   border-color: transparent;
   color: var(--clr-red-dark);
   cursor: pointer;
-}
+} */
 
 /*
 =============== 
 Sidebar
 ===============
 */
-.sidebar-header {
+/* .sidebar-header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 1rem 1.5rem;
-}
+} */
 
 .close-btn {
-  order: 2;
+  position: fixed;
+  padding-left: 92%;
   font-size: 1.75rem;
   background: transparent;
   border-color: transparent;
   color: var(--clr-primary-5);
   transition: var(--transition);
   cursor: pointer;
-  align-items: flex-end;
   color: var(--clr-red-dark);
   margin-top: 0.2rem;
 }
@@ -277,21 +284,19 @@ Sidebar
   color: var(--clr-red-light);
 }
 
-.logo {
-  order: 1;
-  justify-self: left;
-  height: 40px;
-}
-
 .links a {
   display: flex;
+  position: relative;
+  top: 3rem;
+  left: 6rem;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   padding: 1rem 1.5rem;
   color: var(--clr-grey-3);
   transition: var(--transition);
   letter-spacing: var(--spacing);
+  margin-top: 10%;
 }
 
 .links a:hover {
@@ -366,13 +371,22 @@ Sidebar
   order: 0;
 }
 
-.home-contents {
-  max-width: 90%;
+.home-contents, 
+.flight-contents, 
+.sports-contents,
+.about-contents {
+  max-width: 95%;
   height: auto;
-  margin: 10px;
-  justify-self: center;
-  padding-left: 130px;
-  padding-right: 60px;
+  object-fit: fill;
+  margin: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+  padding-right: 5px;
+  /* border: 24px solid white; 
+  border-radius: 100px;
+  padding: 5px;
+  width: 1000px; */
 }
 
 /* img:hover {

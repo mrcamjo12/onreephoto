@@ -1,6 +1,7 @@
 import { FaBars } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
-import {Link} from 'react-router-dom'
+import FlightImages from './flightimages'
+
 
 const Flight = () => {
   const {openSidebar} = useGlobalContext()
@@ -10,7 +11,7 @@ const Flight = () => {
           <button className='sidebar-toggle' onClick={openSidebar}>
             <FaBars />
            </button>        
-            <h1>Henry</h1>
+           <FlightImages />
     </main>
   )
 }

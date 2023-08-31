@@ -8,7 +8,8 @@ const HomeImages = () => {
         <div className='container'>
            <div className='home-contents'>
              <h1>onree photography</h1>
-             <p>Los Angeles based Photographer</p>
+             <h3>Henry Tran</h3>
+             <h4>Los Angeles based Photographer</h4>
            </div>
            <img src={Airplane} alt='airplane' className='home-contents'></img>
            <br></br>

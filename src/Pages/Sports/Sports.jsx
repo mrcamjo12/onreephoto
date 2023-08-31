@@ -1,8 +1,8 @@
 import { FaBars } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
-import HomeImages from '../Home/homeimages'
+import SportsImages from '../Sports/sportsimages'
 
-const Home = () => {
+const Sports = () => {
   const {openSidebar} = useGlobalContext()
   return (
     <main>
@@ -10,11 +10,11 @@ const Home = () => {
           <button className='sidebar-toggle' onClick={openSidebar}>
             <FaBars />
            </button>
-           <HomeImages />
+           <SportsImages />
           
 
     </main>
   )
 }
 
-export default Home
+export default Sports

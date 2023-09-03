@@ -6,7 +6,7 @@ import HomeImages from './homeimages'
 const Home = () => {
   const {openSidebar} = useGlobalContext()
     return (
-    <main className=''>
+    <main>
      <button className='sidebar-toggle' onClick={openSidebar}>
         <FaBars />
       </button>

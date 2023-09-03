@@ -12,12 +12,12 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import ScrollButton from './Components/ScrollButton'
 
 function App() {
   return (
     <>
-      {/* <Home />
-      <Flight /> */}
+
       <Sidebar />
       <Routes>
          <Route path='/' element={<Home />} />
@@ -28,6 +28,7 @@ function App() {
          <Route path='/people' element={<People />} />
          <Route path='/clients' element={<Clients />} />
       </Routes>
+      <ScrollButton />
         <ul className='social-icons'>
         {social.map((link) => {
           const {id, url, icon} = link;

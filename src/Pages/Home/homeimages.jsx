@@ -7,6 +7,7 @@ const HomeImages = () => {
     return (
         <div className='container'>
            <div className='home-contents'>
+              <br></br>
              <h1>onree photography</h1>
              <h3>Henry Tran</h3>
              <h4>Los Angeles based Photographer</h4>

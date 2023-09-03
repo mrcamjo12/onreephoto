@@ -84,6 +84,8 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   text-align: center;
+  color: white;
+
 }
 
 h1 {
@@ -287,8 +289,8 @@ Sidebar
 .links a {
   display: flex;
   position: relative;
-  top: 3rem;
-  left: 6rem;
+  top: 4rem;
+  left: 60%;
   align-items: center;
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -296,7 +298,7 @@ Sidebar
   color: var(--clr-grey-3);
   transition: var(--transition);
   letter-spacing: var(--spacing);
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
 .links a:hover {
@@ -305,7 +307,7 @@ Sidebar
 }
 
 .links a svg {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--clr-grey-5);
   margin-right: 1rem;
   transition: var(--transition);
@@ -313,6 +315,7 @@ Sidebar
 
 .links a:hover svg {
   color: var(--clr-grey-4);
+  font-size: 1.85rem;
 }
 
 .social-icons {
@@ -367,14 +370,13 @@ Sidebar
   align-content: flex-start;
 }
 
-.prephoto-text {
+/* .prephoto-text {
   order: 0;
-}
+} */
 
 .home-contents, 
 .flight-contents, 
-.sports-contents,
-.about-contents {
+.sports-contents{
   max-width: 95%;
   height: auto;
   object-fit: fill;
@@ -389,6 +391,69 @@ Sidebar
   width: 1000px; */
 }
 
-/* img:hover {
-  transform: scale(1.075);
+/* .about-container {
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: 90px 90px 90px 90px;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 95%;
+  height: auto;
+  padding-right: 200px;
+}
+
+.about-item1 {
+  grid-column: 1 / span4;
+  grid-row: 1;
+}
+
+.about-item2 {
+  grid-column: 4/ span2;
+  grid-row: 2;
+}
+
+.about-item3 {
+  grid-column: 4/span1;
+  grid-row: 3;
 } */
+
+.about-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: column wrap;
+    align-content: flex-start;
+}
+
+
+
+.about-item {
+    max-width: 95%;
+    height: auto;
+    object-fit: fill;
+    margin: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 120px;
+    padding-right: 5px;
+    color: white;
+    justify-items: center;
+    font-size: 1.25rem;
+}
+
+.about-item1 {
+  order: 1;
+  font-size: 3rem;
+}
+
+.about-item2 {
+  order: 2;
+}
+
+.about-item3 {
+  order: 3;
+  padding-left: 200px;
+  padding-right: 70px;
+  text-align: center;
+}

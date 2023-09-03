@@ -45,13 +45,13 @@ export const links = [
     icon: <ImEarth />,
   },
   {
-    id: 5,
+    id: 6,
     url: '/people',
     text: 'people',
     icon: <FaWalking />,
   },
   {
-    id: 5,
+    id: 7,
     url: '/clients',
     text: 'clients',
     icon: <FaHandshake />,

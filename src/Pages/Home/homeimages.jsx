@@ -4,21 +4,21 @@ import PierHanger1 from './Home-Photos/pierhenge1.jpg'
 import VeniceNight from './Home-Photos/venicenight.jpg'
 
 const HomeImages = () => {
-    return (
+       return (
         <div className='container'>
-           <div className='home-contents'>
+           <div className='hc hc1'>
               <br></br>
              <h1>onree photography</h1>
              <h3>Henry Tran</h3>
-             <h4>Los Angeles based Photographer</h4>
+             <h4>Los Angeles Photographer</h4>
            </div>
-           <img src={Airplane} alt='airplane' className='home-contents'></img>
+           <img src={Airplane} alt='airplane' className='hc hc2'></img>
            <br></br>
-           <img src={Hoop} alt='hoop' className='home-contents'></img>
+           <img src={Hoop} alt='hoop' className='hc hc3'></img>
            <br></br>
-           <img src={PierHanger1} alt='pier' className='home-contents'></img>
+           <img src={PierHanger1} alt='pier' className='hc hc4'></img>
            <br></br>
-           <img src={VeniceNight} alt='venice' className='home-contents'></img>
+           <img src={VeniceNight} alt='venice' className='hc hc5'></img>
            <br></br>
         </div>
     )

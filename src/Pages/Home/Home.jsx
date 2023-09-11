@@ -7,7 +7,7 @@ const Home = () => {
   const {openSidebar} = useGlobalContext()
     return (
     <main>
-     <button className='sidebar-toggle' onClick={openSidebar}>
+     <button className='sidebar-toggle' onClick={openSidebar} id='side-btn'>
         <FaBars />
       </button>
       <HomeImages />

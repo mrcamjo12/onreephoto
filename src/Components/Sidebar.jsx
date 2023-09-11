@@ -4,10 +4,10 @@ import { links } from '../data'
 import { useGlobalContext } from '../context'
 
 const Sidebar = () => {
-  const { isSidebarOpen, openSidebar} = useGlobalContext()
+  const { isSidebarOpen, closeSidebar} = useGlobalContext()
   return (
       <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
-        <button className='close-btn' onClick={openSidebar}>
+        <button className='close-btn' onClick={closeSidebar} id='c-btn'>
           <FaTimes />
         </button>
        <ul className='links'>
@@ -21,16 +21,6 @@ const Sidebar = () => {
           </li>
         })}
       </ul>
-      {/* <ul className='social-icons'>
-        {social.map((link) => {
-          const {id, url, icon} = link;
-          return (
-            <li key={id}>
-              <a href={url} target='_blank' rel="noreferrer">{icon}</a>
-            </li>
-          )
-        })}  
-      </ul> */}
   </aside>
   )
 }

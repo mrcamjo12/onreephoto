@@ -4,20 +4,26 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-    const [showButton, setShowButton] = useState(true)
     const [visibleScroll, setVisibleScroll] = useState(false)
+    const btn = document.getElementById('side-btn')
+    const cbtn = document.getElementById('c-btn')
 
     const openSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen)
-        setShowButton(!showButton)
+        btn.addEventListener('click', () => {
+            btn.style.visibility='hidden'
+    })
     }
-    // const closeSidebar = () => {
-    //     setIsSidebarOpen(false)
-    //     setShowButton(!showButton)
-    // }
+    const closeSidebar = () => {
+        setIsSidebarOpen(false)
+        cbtn.addEventListener('click', () => {
+            btn.style.visibility='visible'
+        })
+        
+    }
 
     return <AppContext.Provider value={{
-        isSidebarOpen, openSidebar, showButton, setShowButton, visibleScroll, setVisibleScroll
+        isSidebarOpen, openSidebar, visibleScroll, closeSidebar, setVisibleScroll
     }}>{children}
     </AppContext.Provider>
 }

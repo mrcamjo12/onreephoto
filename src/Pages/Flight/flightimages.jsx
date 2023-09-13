@@ -8,19 +8,18 @@ import Lacc from './Flight-Photos/lacc.jpg'
 const FlightImages = () => {
     return (
         <div className='container'>
-           <div className='home-contents'>
-             <h1>onree photography</h1>
-             <h3>drone images</h3>
+           <div className='hc hc1'>
+             <h3>drone</h3>
            </div>
-           <img src={Four05} alt='405' className='flight-contents'></img>
+           <img src={Four05} alt='405' className='hc hc2'></img>
            <br></br>
-           <img src={FoggyFreeway} alt='Foggy-Freeway' className='flight-contents'></img>
+           <img src={FoggyFreeway} alt='Foggy-Freeway' className='hc hc2'></img>
            <br></br>
-           <img src={Griffith} alt='Griffith' className='flight-contents'></img>
+           <img src={Griffith} alt='Griffith' className='hc hc2'></img>
            <br></br>
-           <img src={Hollywood} alt='Hollywood' className='flight-contents'></img>
+           <img src={Hollywood} alt='Hollywood' className='hc hc2'></img>
            <br></br>
-           <img src={Lacc} alt='Lacc' className='flight-contents'></img>
+           <img src={Lacc} alt='Lacc' className='hc hc2'></img>
            <br></br>
         </div>
     )

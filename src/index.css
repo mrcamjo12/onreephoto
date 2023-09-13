@@ -105,7 +105,7 @@ p {
   color: var(--clr-grey-5);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 760px) {
   h1 {
     font-size: 4rem;
   }
@@ -123,22 +123,6 @@ p {
   }
 }
 
-/*  global classes */
-
-/* section */
-/* .section {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
-} */
-/* 
-@media screen and (min-width: 992px) {
-  .section {
-    width: 95vw;
-  }
-} */
-
-
 /*
 =============== 
 Home
@@ -151,24 +135,83 @@ main {
   justify-content: center;
   align-items: center;
 }
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    background: black;
+    border-style: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    height: 100%;
+    width: 70px;
+    z-index: 999;
+    border-style: solid;
+    border-color: black;
+}
 
 .sidebar-toggle {
-  position: fixed;
-  top: 2rem;
-  left: 2rem;
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
   color: white;
   transition: var(--transition);
   cursor: pointer;
-  
 }
 
-.hide-sidebar-toggle{
-  transform: translate(-100%)
+@media screen and (max-width: 760px) {
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    background-color: black;
+    justify-content: flex-start;
+    border-style: solid;
+    border-color: black;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+  }
 }
 
+.navbar1 {
+  justify-content: flex-start;
+}
+.navbar2 {
+  writing-mode: vertical-lr;
+  text-orientation:upright;
+  padding-top: 310px;
+  padding-left: 10px;
+  visibility: visible;
+}
+
+@media screen and (max-width: 760px) {
+  .navbar2 {
+    visibility: hidden;
+    padding-top: 0px;
+    padding-left: 0px;
+  }}
+
+  .navbar3 {
+    visibility: hidden;
+  }
+
+@media screen and (max-width: 760px) {
+  .navbar3 {
+    visibility: visible;
+    padding-top: 15px;
+    width: 75%;
+  }
+}
 
 .btn:hover {
   color: var(--clr-black);
@@ -196,7 +239,7 @@ main {
   display: flex;
   position: relative;
   top: 4.25rem;
-  left: 20%;
+  left: 60%;
   align-items: center;
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -256,100 +299,42 @@ main {
   transform: translate(0);
 }
 
-@media screen and (min-width: 676px) {
-  .sidebar {
-    width: 100%;
-  }
-}
 
 .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 80px;
+  padding-left: 70px
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    padding-left: 0px;
+  }
 }
 
 .hc {
   text-align: center;
-  max-width: 95%;
-  height: auto;
+  max-width: 90%;
+  max-height: 860px;
   object-fit: fill;
 }
 
-/* .hc1 {
+.hc2{
   border-style: solid;
-  border-width: medium;
+  border-width: 4px;
   border-color: white;
-} */
-.hc2 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-}
-.hc3 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-}
-.hc4 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-}
-.hc5 {
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
+  border-radius: 10px;
 }
 
-.home-contents, 
-.flight-contents, 
-.sports-contents{
-  max-width: 95%;
-  height: auto;
-  object-fit: fill;
-  margin: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 120px;
-  padding-right: 5px;
-}
-
-.about-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    flex-direction: column;
-    flex-flow: column wrap;
-    align-content: flex-start;
-}
-
-.about-item {
-    max-width: 95%;
-    height: auto;
-    object-fit: fill;
-    margin: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 120px;
-    padding-right: 5px;
-    color: white;
-    justify-items: center;
-    font-size: 1.25rem;
-}
-
-.about-item1 {
-  order: 1;
-  font-size: 3rem;
-}
-
-.about-item2 {
-  order: 2;
-}
-
-.about-item3 {
-  order: 3;
-  padding-left: 120px;
-  padding-right: 20px;
-  text-align: center;
+@media screen and (max-width: 760px) {
+  .hc {
+    max-width: 97%;
+    max-height: 820px;
+  } 
+  .hc1{
+    width: 100%;
+  }
 }

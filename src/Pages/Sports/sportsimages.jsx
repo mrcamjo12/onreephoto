@@ -16,31 +16,30 @@ import LafcGoalie from './Sports-Photos/lafcLagGoalie.jpg'
 const SportsImages = () => {
     return (
         <div className='container'>
-           <div className='home-contents'>
-             <h1>onree photography</h1>
-             <h4>sports photos</h4>
+           <div className='hc hc1'>
+             <h3>sports</h3>
            </div>
-           <img src={DrewLeague1} alt='Drew-League-01' className='sports-contents'></img>
+           <img src={DrewLeague1} alt='Drew-League-01' className='hc hc2'></img>
            <br></br>
-           <img src={DrewLeague2} alt='Drew-League-02' className='sports-contents'></img>
+           <img src={DrewLeague2} alt='Drew-League-02' className='hc hc2'></img>
            <br></br>
-           <img src={JuventasACMilan01} alt='Juventas-AC-01' className='sports-contents'></img>
+           <img src={JuventasACMilan01} alt='Juventas-AC-01' className='hc hc2'></img>
            <br></br>
-           <img src={JuventasACMilan02} alt='Juventas-AC-02' className='sports-contents'></img>
+           <img src={JuventasACMilan02} alt='Juventas-AC-02' className='hc hc2'></img>
            <br></br>
-           <img src={JuventasACMilan03} alt='Juventas-AC-03' className='sports-contents'></img>
+           <img src={JuventasACMilan03} alt='Juventas-AC-03' className='hc hc2'></img>
            <br></br>
-           <img src={JuventasACMilan04} alt='Juventas-AC-04' className='sports-contents'></img>
+           <img src={JuventasACMilan04} alt='Juventas-AC-04' className='hc hc2'></img>
            <br></br>
-           <img src={JuventasACMilan05} alt='Juventas-AC-04' className='sports-contents'></img>
+           <img src={JuventasACMilan05} alt='Juventas-AC-04' className='hc hc2'></img>
            <br></br>
-           <img src={LafcLAG01} alt='LafcLAG01' className='sports-contents'></img>
+           <img src={LafcLAG01} alt='LafcLAG01' className='hc hc2'></img>
            <br></br>
-           <img src={LafcLAG02} alt='LafcLAG02' className='sports-contents'></img>
+           <img src={LafcLAG02} alt='LafcLAG02' className='hc hc2'></img>
            <br></br>
-           <img src={LafcGoal} alt='LafcGoal' className='sports-contents'></img>
+           <img src={LafcGoal} alt='LafcGoal' className='hc hc2'></img>
            <br></br>
-           <img src={LafcGoalie} alt='LafcGoalie' className='sports-contents'></img>
+           <img src={LafcGoalie} alt='LafcGoalie' className='hc hc2'></img>
            <br></br>
         </div>
     )

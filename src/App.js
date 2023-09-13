@@ -13,11 +13,12 @@ import {
   Route
 } from "react-router-dom";
 import ScrollButton from './Components/ScrollButton'
+import NavBar from './Components/NavBar'
 
 function App() {
   return (
     <>
-
+      <NavBar />
       <Sidebar />
       <Routes>
          <Route path='/' element={<Home />} />
@@ -29,16 +30,19 @@ function App() {
          <Route path='/clients' element={<Clients />} />
       </Routes>
       <ScrollButton />
-        <ul className='social-icons'>
-        {social.map((link) => {
-          const {id, url, icon} = link;
-          return (
-            <li key={id}>
-              <a href={url} target='_blank' rel="noreferrer">{icon}</a>
-            </li>
-          )
-        })}  
-        </ul>
+        <div className='container'>
+          <h4 className='hc hc1'>social media:</h4>
+          <ul className='social-icons hc hc1'>
+          {social.map((link) => {
+            const {id, url, icon} = link;
+              return (
+              <li key={id}>
+                <a href={url} target='_blank' rel="noreferrer">{icon}</a>
+              </li>
+           )
+          })}  
+          </ul>
+        </div>  
     </>
   )
 }

@@ -1,17 +1,11 @@
-import { FaBars } from 'react-icons/fa'
-import { useGlobalContext } from '../../context'
+import React from "react"
 
-
-const About = () => {
-  const {openSidebar} = useGlobalContext()
+const World = () => {
     return (
-    <main className=''>
-     <button className='sidebar-toggle' onClick={openSidebar}>
-        <FaBars />
-      </button>
+    <main>
      <h1>This is the world photos page</h1>
     </main>
   )
 }
 
-export default About
+export default World

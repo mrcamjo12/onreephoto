@@ -10,12 +10,19 @@ const AppProvider = ({ children }) => {
 
     const openSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen)
-        btn.addEventListener('click', () => {
-            btn.style.visibility='hidden'
-    })
+        .then(hideBtn)
     }
     const closeSidebar = () => {
         setIsSidebarOpen(false)
+    }
+
+    const hideBtn = () => {
+        btn.addEventListener('click', () => {
+        btn.style.visibility='hidden'
+    })
+    }
+
+    const showBtn = () => {
         cbtn.addEventListener('click', () => {
             btn.style.visibility='visible'
         })
@@ -23,7 +30,7 @@ const AppProvider = ({ children }) => {
     }
 
     return <AppContext.Provider value={{
-        isSidebarOpen, openSidebar, visibleScroll, closeSidebar, setVisibleScroll
+        isSidebarOpen, openSidebar, visibleScroll, closeSidebar, setVisibleScroll, showBtn, hideBtn, btn, cbtn
     }}>{children}
     </AppContext.Provider>
 }

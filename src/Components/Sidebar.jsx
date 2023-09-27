@@ -7,15 +7,14 @@ const Sidebar = () => {
   const { isSidebarOpen, closeSidebar} = useGlobalContext()
   return (
       <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
-        <button className='close-btn' onClick={closeSidebar} id='c-btn'>
+        {/* <button className='close-btn' onClick={closeSidebar} id='c-btn'>
           <FaTimes />
-        </button>
+        </button> */}
        <ul className='links'>
         {links.map((link)=> {
-          const {id, url, text, icon} = link
+          const {id, url, text} = link
           return <li key={id}>
             <a href={url}>
-              {icon}
               {text}
             </a>
           </li>

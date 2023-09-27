@@ -3,7 +3,7 @@ import { useGlobalContext } from '../context'
 import { FaBars } from 'react-icons/fa'
 
 const NavBar = () => {
-  const {openSidebar, hideBtn} = useGlobalContext()
+  const {openSidebar} = useGlobalContext()
     return (
     <div className='navbar'>
      <button className='sidebar-toggle navbar1' onClick={openSidebar} id='side-btn'>

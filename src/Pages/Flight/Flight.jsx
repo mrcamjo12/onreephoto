@@ -1,14 +1,9 @@
 
 import FlightImages from './flightimages'
 
-
-
 const Flight = () => {
   return (
-    <main> 
-           <FlightImages />
-    </main>
+    <FlightImages />
   )
 }
-
 export default Flight

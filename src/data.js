@@ -2,14 +2,7 @@ import React from 'react';
 import {
   FaTwitter,
   FaInstagram,
-  FaHome,
-  FaBookOpen,
-  FaHelicopter,
-  FaWalking,
-  FaHandshake
 } from 'react-icons/fa';
-import {MdSportsSoccer} from 'react-icons/md'
-import {ImEarth} from 'react-icons/im'
 
 
 // sidebar links and icons
@@ -17,44 +10,37 @@ export const links = [
   {
     id: 1,
     url: '/',
-    text: 'home',
-    icon: <FaHome />,
+    text: 'home'
   },
   {
     id: 2,
     url: '/about',
-    text: 'about',
-    icon: <FaBookOpen />,
+    text: 'about'
   },
   {
     id: 3,
     url: '/flight',
-    text: 'flight',
-    icon: <FaHelicopter />,
+    text: 'flight'
   },
   {
     id: 4,
     url: '/sports',
-    text: 'sports',
-    icon: <MdSportsSoccer />,
+    text: 'sports'
   },
   {
     id: 5,
     url: '/world',
-    text: 'world',
-    icon: <ImEarth />,
+    text: 'world'
   },
   {
     id: 6,
     url: '/people',
-    text: 'people',
-    icon: <FaWalking />,
+    text: 'people'
   },
   {
     id: 7,
     url: '/clients',
-    text: 'clients',
-    icon: <FaHandshake />,
+    text: 'clients'
   },
 ];
 
@@ -72,5 +58,4 @@ export const social = [
   }  
 ];
 
-// pictures for carousel by category
 

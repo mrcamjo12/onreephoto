@@ -236,10 +236,9 @@ main {
 }
 
 .links a {
-  display: flex;
+  display: inline-flex;
   position: relative;
   top: 4.25rem;
-  left: 60%;
   align-items: center;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -288,11 +287,13 @@ main {
   height: 100%;
   background: black;
   display: flex;
+  flex-direction: row;
   grid-template-rows: auto 1fr auto;
   row-gap: 1rem;
   box-shadow: var(--clr-red-dark);
   transition: var(--transition);
   transform: translate(-100%);
+  justify-content: center;
 }
 
 .show-sidebar {

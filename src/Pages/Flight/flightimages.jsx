@@ -9,7 +9,7 @@ const FlightImages = () => {
     return (
         <div className='container'>
            <div className='hc hc1'>
-             <h3>drone</h3>
+             <h3>flight</h3>
            </div>
            <img src={Four05} alt='405' className='hc hc2'></img>
            <br></br>

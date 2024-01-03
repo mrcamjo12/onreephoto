@@ -37,11 +37,6 @@ export const links = [
     url: '/people',
     text: 'people'
   },
-  {
-    id: 7,
-    url: '/clients',
-    text: 'clients'
-  },
 ];
 
 // social media links and icons

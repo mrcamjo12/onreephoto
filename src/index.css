@@ -32,7 +32,7 @@
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
-  --transition: all 0.3s linear;
+  --transition: all 0.8s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -236,21 +236,24 @@ main {
 }
 
 .links a {
-  display: inline-flex;
-  position: relative;
+  display: grid;
+  grid-gap: 20px;
+  
+  /* position: static;
+  grid-template-columns: 1fr;
   top: 4.25rem;
   align-items: center;
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1rem 1.5rem;
   color: white;
-  transition: var(--transition);
+  transition: 0.2s linear;
   letter-spacing: var(--spacing);
-  margin-top: 6%;
+  margin-top: 6%; */
 }
 
 .links a:hover {
-  background: grey;
+  font-size: 1.9rem;
   color: white;
 }
 

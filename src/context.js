@@ -12,14 +12,20 @@ const AppProvider = ({ children }) => {
     }
 
     const closeSidebar = () => {
-        setIsSidebarOpen(false)
+        setIsSidebarOpen(false);
     }
 
-
-    return <AppContext.Provider value={{
-        isSidebarOpen, openSidebar, visibleScroll, closeSidebar, setVisibleScroll
-    }}>{children}
+    return (
+        <AppContext.Provider value={{
+            isSidebarOpen, 
+            openSidebar,
+            closeSidebar,
+            visibleScroll, 
+            setVisibleScroll
+    }}>
+        {children}
     </AppContext.Provider>
+    );
 }
 // custom hook
 export const useGlobalContext = () => {

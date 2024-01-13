@@ -1,15 +1,23 @@
 import React from 'react'
 import { useGlobalContext } from '../context'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 const NavBar = () => {
-  const {openSidebar} = useGlobalContext()
+  const {isSidebarOpen, openSidebar, closeSidebar} = useGlobalContext()
     return (
     <div className='navbar'>
-     <button className='sidebar-toggle navbar1' onClick={openSidebar} id='side-btn'>
-        <FaBars />
-    </button>   
-    <div className='navbar2'>
+       <div>
+            {isSidebarOpen ? (
+                <button  className='sidebar-toggle' onClick={closeSidebar}>
+                  <FaTimes />
+                </button>
+            ) : (
+                <button  className='sidebar-toggle' onClick={openSidebar}>
+                  <FaBars />
+                </button>
+            )}
+        </div>
+      <div className='navbar2'>
       <a href='/'>
         <h3>ht</h3>
       </a>

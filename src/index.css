@@ -196,7 +196,11 @@ main {
   font-size: 1.8rem;
   color: grey;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, font-size 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+
+.links li a:hover {
+  font-size: 2rem;
 }
 
 .links-visible li a {

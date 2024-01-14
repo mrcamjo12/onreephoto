@@ -1,7 +1,7 @@
 const People = () => {
     return (
     <main>
-      <h1>This is the people photos page</h1>
+      <h1>People</h1>
     </main>
   )
 }

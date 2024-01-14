@@ -1,10 +1,8 @@
-import React from "react"
+import WorldImages from "./worldimages"
 
 const World = () => {
     return (
-    <main>
-     <h1>world</h1>
-    </main>
+     <WorldImages />
   )
 }
 

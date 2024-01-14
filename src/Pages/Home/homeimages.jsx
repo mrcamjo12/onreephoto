@@ -4,7 +4,7 @@ const HomeImages = () => {
         <div className='container'>
            <div className='hc hc1'>
               <br></br>
-             <h3>Henry Tran</h3>
+             <h1>Onree Photography</h1>
            </div>
         </div>
     )
